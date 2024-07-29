@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      :root {
+        --navcol: red;
+        --contcol: blue;
+        --boxcol: yellow;
+        --footcol: green;
+      }
+        .nav {
+            height: 50px;
+            width: 100v;
+            background: var(--navcol);
+            position: sticky;
+            top: 0px;
+        }
+      ul {
+        display: flex;
+        list-style: none;
+        padding-top: 8px;
+      }
+      li {
+        padding: 10px;
+      }
+      .container {
+        height: 800px;
+        width: 100v;
+        background: var(--contcol);
+      }
+      .box {
+        height: 600px;
+        width: 600px;
+        background: var(--boxcol);
+        margin: 5px;
+        margin-top: 50px;
+        margin-left: 97px;
+        display: inline-block;
+      }
+      .circle {
+        right: 5px;
+        bottom: 50px;
+        position: fixed;
+      }
+      .circle img {
+        border-radius: 100px;
+      }
+      .footer {
+        height: 50px;
+        width: 100v;
+        background: var(--footcol);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Services</li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="circle">
+        <img
+          height="50"
+          src="https://cdn.pixabay.com/photo/2016/12/27/13/10/logo-1933884_640.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="footer"></div>
+  </body>
+</html>
